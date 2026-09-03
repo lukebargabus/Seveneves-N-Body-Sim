@@ -19,7 +19,7 @@ def update(i):
     ax.clear()
     frame_df = df[df["t"] == i]
     for obj_mass, group in frame_df.groupby("obj"):
-        ax.scatter(group["x"], group["y"], group["z"], s=20, label=f"mass={obj_mass}")
+        ax.scatter(group["x"], group["y"], group["z"], s=20, label=f"Mass={obj_mass}")
 
     ax.set_xlim(x_min, x_max)
     ax.set_ylim(y_min, y_max)
@@ -27,7 +27,7 @@ def update(i):
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.set_zlabel("z")
-    ax.set_title("Earth-Moon trajectories")
+    ax.set_title("Earth-Moon Trajectories")
     ax.legend()
 
 
