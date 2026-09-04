@@ -10,9 +10,9 @@ To start I created a simple 2 body simulation using leap frog integration of New
 
 Next I generalized the code to handle N bodies, with one caveat being the initial velocity calculation assumes a small object to be orbiting around a much larger, stationary one (the Moon around the Earth), so it is catered towards out specific simulation and would not always function perfectly as a general N-body simulation.
 
-I plan to work up to a generalized N-body simulation and then a full simulation described in the model, with moon chunks colliding, splitting arbitrarily, and forming rings or succumbing to Earth's gravity.
+I plan to work up to a full simulation described in the novel, with moon chunks colliding, splitting arbitrarily, and forming rings or succumbing to Earth's gravity.
 
 ## Status
 - [x] 2-body Earth-Moon orbit
-- [ ] N-body generalization
+- [x] N-body generalization
 - [ ] Collision/fragmentation logic
