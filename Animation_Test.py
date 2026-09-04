@@ -33,5 +33,5 @@ def update(i):
 
 ani = FuncAnimation(fig, update, frames=sorted(df["t"].unique()), interval=50)
 
-ani.save('orbit.gif', writer='pillow')
+ani.save('Test_orbit.gif', writer='pillow')
 plt.show()

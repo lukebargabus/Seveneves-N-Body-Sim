@@ -6,7 +6,9 @@ In the novel "Seveneves" by Neal Stephenson, the Moon mysteriously is struck by 
 
 To start I created a simple 2 body simulation using leap frog integration of Newton's laws of gravity, nothing too crazy. the simulation runs and creates and outputs a parquet data file tracking the bodies movements over small, discrete time intervals. I tested the accuracy of the orbits first in 2D MatPlotLib by plotting the paths taken by the bodies, and again with 3D MatPlotLib, where I created a gif of the bodies orbiting each other using FuncAnimation, shown below.
 
-![3D Animation Test](orbit.gif)
+![3D Animation Test](2B_orbit.gif)
+
+Next I generalized the code to handle N bodies, with one caveat being the initial velocity calculation assumes a small object to be orbiting around a much larger, stationary one (the Moon around the Earth), so it is catered towards out specific simulation and would not always function perfectly as a general N-body simulation.
 
 I plan to work up to a generalized N-body simulation and then a full simulation described in the model, with moon chunks colliding, splitting arbitrarily, and forming rings or succumbing to Earth's gravity.
 
